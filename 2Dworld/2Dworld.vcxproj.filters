@@ -87,6 +87,18 @@
     <ClCompile Include="test\PlanerGraphFaces.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="test\EdgeDetection.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Spline.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Traveling_salesman_problem.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="test\SeamCarving.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shaders\Basic.shader" />
@@ -95,6 +107,8 @@
     <None Include="res\shaders\LineFading.shader" />
     <None Include="res\shaders\PosColorTex.shader" />
     <None Include="res\shaders\Line.shader" />
+    <None Include="res\shaders\EdgeDetection.shader" />
+    <None Include="res\shaders\SeamCarving.shader" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Renderer.h">
@@ -173,6 +187,18 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="test\PlanerGraphFaces.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="test\EdgeDetection.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Spline.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Traveling_salesman_problem.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="test\SeamCarving.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

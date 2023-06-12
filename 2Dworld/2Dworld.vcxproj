@@ -19,6 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="test\SeamCarving.cpp" />
+    <ClCompile Include="test\Spline.cpp" />
+    <ClCompile Include="test\EdgeDetection.cpp" />
     <ClCompile Include="test\PlanerGraphFaces.cpp" />
     <ClCompile Include="test\GrayCodeHamiltonianPath.cpp" />
     <ClCompile Include="test\Dijkstra.cpp" />
@@ -43,16 +46,22 @@
     <ClCompile Include="test\TestClearColor.cpp" />
     <ClCompile Include="test\TestTexture.cpp" />
     <ClCompile Include="test\TreeBuild.cpp" />
+    <ClCompile Include="test\Traveling_salesman_problem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui.ini" />
     <None Include="res\shaders\Basic.shader" />
     <None Include="res\shaders\BigO.shader" />
+    <None Include="res\shaders\EdgeDetection.shader" />
     <None Include="res\shaders\Line.shader" />
     <None Include="res\shaders\LineFading.shader" />
     <None Include="res\shaders\PosColorTex.shader" />
+    <None Include="res\shaders\SeamCarving.shader" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="test\SeamCarving.h" />
+    <ClInclude Include="test\Spline.h" />
+    <ClInclude Include="test\EdgeDetection.h" />
     <ClInclude Include="test\PlanerGraphFaces.h" />
     <ClInclude Include="test\GrayCodeHamiltonianPath.h" />
     <ClInclude Include="test\Dijkstra.h" />
@@ -79,6 +88,7 @@
     <ClInclude Include="test\Test.h" />
     <ClInclude Include="test\TestTexture.h" />
     <ClInclude Include="test\TreeBuild.h" />
+    <ClInclude Include="test\Traveling_salesman_problem.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

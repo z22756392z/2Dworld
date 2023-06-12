@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "glm/vec3.hpp"
 
 class Texture
 {
@@ -12,10 +13,14 @@ public:
 	Texture(const std::string& filePath);
 	~Texture();
 
+	void SubBuffer(int width, int height, unsigned char* buffer);
+
 	void Bind(unsigned int slot = 0) const;
 	void Unbind() const;
 
 	inline int GetWidth() const { return m_Width; }
 	inline int GetHeight() const { return m_Height; }
+	inline int GetChannel() const { return m_BPP; }
+	inline unsigned char* GetImageBuffer() const { return m_LocalBuffer; }
 };
 

@@ -15,31 +15,33 @@
 */
 
 #pragma once
-#include<GL/glew.h>
+#include <GL/glew.h>
 #include <glfw/glfw3.h>
 
-#include<iostream>
-#include<string>
-#include<fstream>
-#include<sstream>
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
 
 #include "Renderer.h"
 
-#include"VertexBuffer.h"
-#include"VertexBufferLayout.h"
-#include"IndexBuffer.h"
-#include"VertexArray.h"
-#include"Shader.h"
-#include"Texture.h"
-#include"TestClearColor.h"
-#include"TestTexture.h"
-#include"Plot_of_Big_O_effeciency_measures.h"
-#include"Chaos_Equations.h"
-#include"TreeBuild.h"
-#include"Dijkstra.h"
-#include"GrayCodeHamiltonianPath.h"
-#include"PlanerGraphFaces.h"
-
+#include "VertexBuffer.h"
+#include "VertexBufferLayout.h"
+#include "IndexBuffer.h"
+#include "VertexArray.h"
+#include "Shader.h"
+#include "Texture.h"
+#include "TestClearColor.h"
+#include "TestTexture.h"
+#include "Plot_of_Big_O_effeciency_measures.h"
+#include "Chaos_Equations.h"
+#include "TreeBuild.h"
+#include "Dijkstra.h"
+#include "GrayCodeHamiltonianPath.h"
+#include "PlanerGraphFaces.h"
+#include "EdgeDetection.h"
+#include "SeamCarving.h"
+#include "Traveling_salesman_problem.h"
 #include "imgui-master/imgui.h"
 #include "imgui-master/imgui_impl_glfw.h"
 #include "imgui-master/imgui_impl_opengl3.h"
@@ -89,11 +91,14 @@ int main(int argc, char* argv[])
     currentTest = testMenu;
 
     testMenu->RegisterTest<test::TestClearColor>("Clear Color");
+    testMenu->RegisterTest<test::EdgeDetection>("EdgeDetection");
     //testMenu->RegisterTest<test::TestTexture>("Texture");
-    testMenu->RegisterTest<test::Plot_of_Big_O_effeciency_measures>("Plot Of Effeciency Measures");
+    //testMenu->RegisterTest<test::Plot_of_Big_O_effeciency_measures>("Plot Of Effeciency Measures");
     //testMenu->RegisterTest<test::Chaos_Equations>("Chaos Equations");
+    testMenu->RegisterTest<test::SeamCarving>("Seam Carving");
     //testMenu->RegisterTest<test::TreeBuild>("Tree Build");
     //testMenu->RegisterTest<test::Dijkstra>("Dijkstra");
+    //testMenu->RegisterTest<test::Traveling_salesman_problem>("Traveling_salesman_problem");
     //testMenu->RegisterTest<test::GrayCodeHamiltonianPath>("Gray code , Hamiltonain Path");
     //testMenu->RegisterTest<test::PlanerGraphFaces>("Planer graph, number of faces");
     GLCall(glClearColor(0.5f, 0.5f, 0.5f, 1.0f));
