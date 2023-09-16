@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui.ini" />
-    <None Include="README.md" />
     <None Include="res\shaders\Basic.shader" />
     <None Include="res\shaders\BigO.shader" />
     <None Include="res\shaders\EdgeDetection.shader" />
