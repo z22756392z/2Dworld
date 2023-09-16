@@ -89,7 +89,7 @@ namespace test {
 
     void SeamCarving::OnImguiRender()
     {
-        if (ImGui::SliderInt("Seam Carving Number:", &m_seam_carve_number, 0, m_texture->GetWidth())) {
+        if (ImGui::SliderInt("Seam Carving Number:", &m_seam_carve_number, 0, m_texture->GetWidth() - 1)) {
             if (m_texture->GetWidth() - m_width > m_seam_carve_number) {
                 m_width = m_texture->GetWidth();
                 m_height = m_texture->GetHeight();

@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);//compatibility  profile set Ver 
     
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1200, 650, "Homework", NULL, NULL);
+    window = glfwCreateWindow(1200, 650, "OpenGL", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -94,12 +94,12 @@ int main(int argc, char* argv[])
     testMenu->RegisterTest<test::EdgeDetection>("EdgeDetection");
     //testMenu->RegisterTest<test::TestTexture>("Texture");
     //testMenu->RegisterTest<test::Plot_of_Big_O_effeciency_measures>("Plot Of Effeciency Measures");
-    //testMenu->RegisterTest<test::Chaos_Equations>("Chaos Equations");
+    testMenu->RegisterTest<test::Chaos_Equations>("Chaos Equations");
     testMenu->RegisterTest<test::SeamCarving>("Seam Carving");
     //testMenu->RegisterTest<test::TreeBuild>("Tree Build");
-    //testMenu->RegisterTest<test::Dijkstra>("Dijkstra");
+    testMenu->RegisterTest<test::Dijkstra>("Dijkstra");
     //testMenu->RegisterTest<test::Traveling_salesman_problem>("Traveling_salesman_problem");
-    //testMenu->RegisterTest<test::GrayCodeHamiltonianPath>("Gray code , Hamiltonain Path");
+    testMenu->RegisterTest<test::GrayCodeHamiltonianPath>("Gray code , Hamiltonain Path");
     //testMenu->RegisterTest<test::PlanerGraphFaces>("Planer graph, number of faces");
     GLCall(glClearColor(0.5f, 0.5f, 0.5f, 1.0f));
     
