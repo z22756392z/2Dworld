@@ -11,7 +11,7 @@
     And there are a lot of functions, so we use GLEW to do it for us.
 
     GLFW is for creating window for us. Because creating window is very operation system specific. So I use GLEW to do it for me.
-    And it is also quick to setup and easy to use.  test
+    And it is also quick to setup and easy to use.
 */
 
 #pragma once
